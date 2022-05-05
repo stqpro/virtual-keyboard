@@ -2,6 +2,7 @@ import keys from './keys';
 
 let lang = 'en';
 let caps = false;
+let shiftPressed = false;
 
 class Key {
   constructor(service, id) {
@@ -99,20 +100,36 @@ function changeLanguage(buttons) {
 function changeSize(buttons) {
   if (caps) {
     caps = false;
-    buttons.filter((element) => !element.service).forEach((element) => {
-      const btn = element.getButton();
-      btn.innerText = btn.innerText.toLowerCase();
-    });
+    if (shiftPressed) {
+      buttons.filter((element) => !element.service).forEach((element) => {
+        const btn = element.getButton();
+        btn.innerText = element[lang].lower.toUpperCase();
+      });
+    } else {
+      buttons.filter((element) => !element.service).forEach((element) => {
+        const btn = element.getButton();
+        btn.innerText = element[lang].lower.toLowerCase();
+      });
+    }
   } else {
     caps = true;
-    buttons.filter((element) => !element.service).forEach((element) => {
-      const btn = element.getButton();
-      btn.innerText = btn.innerText.toUpperCase();
-    });
+    if (shiftPressed) {
+      buttons.filter((element) => !element.service).forEach((element) => {
+        const btn = element.getButton();
+        btn.innerText = element[lang].upper.toLowerCase();
+      });
+    } else {
+      buttons.filter((element) => !element.service).forEach((element) => {
+        const btn = element.getButton();
+        btn.innerText = element[lang].upper.toUpperCase();
+      });
+    }
   }
 }
 
 function shiftDown(buttons) {
+  shiftPressed = true;
+
   if (caps) {
     buttons.filter((element) => !element.service).forEach((element) => {
       const btn = element.getButton();
@@ -127,6 +144,8 @@ function shiftDown(buttons) {
 }
 
 function shiftUp(buttons) {
+  shiftPressed = false;
+
   if (caps) {
     buttons.filter((element) => !element.service).forEach((element) => {
       const btn = element.getButton();
@@ -178,6 +197,6 @@ document.addEventListener('keyup', (keyboardEvent) => {
   }
 
   if (['ShiftLeft', 'ShiftRight'].includes(keyboardEvent.code)) {
-    shiftUp([].concat(...buttons));
+    if (!keyboardEvent.shiftKey) shiftUp([].concat(...buttons));
   }
 });
