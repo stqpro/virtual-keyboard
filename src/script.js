@@ -33,6 +33,19 @@ class Key {
   }
 }
 
+function createHeading() {
+  const heading = document.createElement('h1');
+  heading.innerText = 'Rolling Scopes School: Virtual Keyboard';
+  document.body.appendChild(heading);
+}
+
+function initTextArea() {
+  const textarea = document.createElement('textarea');
+  textarea.classList.add('textarea');
+  document.body.appendChild(textarea);
+  return textarea;
+}
+
 function initKeyboard() {
   const buttons = [];
   const keyboardContainer = document.createElement('div');
@@ -53,4 +66,17 @@ function initKeyboard() {
     buttons[i].forEach((element) => row.appendChild(element));
     keyboardContainer.appendChild(row);
   }
+
+  return keyboardContainer;
 }
+
+function initWorkspace() {
+  const workspace = document.createElement('div');
+  workspace.classList.add('workspace');
+  workspace.appendChild(initTextArea());
+  workspace.appendChild(initKeyboard());
+  document.body.appendChild(workspace);
+}
+
+createHeading();
+initWorkspace();

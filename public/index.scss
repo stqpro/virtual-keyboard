@@ -1,0 +1,128 @@
+$gap: 5px;
+$base-size: 10 * $gap;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f8f8;
+}
+
+button {
+  width: $base-size;
+  height: $base-size;
+  border: none;
+  border-radius: 9px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgba(0, 0, 0, 0.23) 0px 1px 2px;
+  font-size: 18px;
+  font-family: inherit;
+  transition: 0.2s;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.service {
+  background-color: #b2b6c2;
+
+  &:hover {
+    background-color: #9a9da6;
+  }
+
+  &:active,
+  .service-pressed {
+    background-color: #807e7e;
+  }
+}
+
+.letter {
+  background-color: #f4f5f9;
+
+  &:hover {
+    background-color: #dadce0;
+  }
+
+  &:active,
+  .letter-pressed {
+    background-color: #a5a5a5;
+  }
+}
+
+.keyboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: $gap;
+
+    .backspace,
+    .enter {
+      width: calc($base-size * 2.6);
+    }
+
+    .tab,
+    .lctrl,
+    .rctrl,
+    .win,
+    .lalt,
+    .ralt {
+      width: calc($base-size * 1.5);
+    }
+
+    .capslock {
+      width: calc($base-size * 2);
+    }
+
+    .enter {
+      width: calc($base-size * 2.7);
+    }
+
+    .lshift {
+      width: calc($base-size * 2.1);
+    }
+
+    .rshift {
+      width: calc($base-size * 2.6);
+    }
+
+    .space {
+      width: calc($base-size * 5.6);
+    }
+  }
+}
+
+.textarea {
+  width: 845px;
+  height: 270px;
+  resize: none;
+  padding: 1em;
+  font-size: 17px;
+  font-family: inherit;
+  border: 2px solid #aaaaaa;
+  background-color: #f8f8f8;
+  transition: 0.3s;
+
+  &:focus {
+    border: 2px solid #818181;
+    outline: none;
+  }
+}
+
+.workspace {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 1em;
+}

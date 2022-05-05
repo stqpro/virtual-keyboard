@@ -298,6 +298,11 @@ const keys = [
         upper: '/',
       },
     },
+    {
+      service: true,
+      name: 'delete',
+      displayName: 'Del',
+    },
   ],
   [
     {
@@ -551,7 +556,7 @@ const keys = [
     {
       service: true,
       name: 'arrowup',
-      displayName: '',
+      displayName: '▲',
     },
     {
       service: true,
@@ -588,17 +593,17 @@ const keys = [
     {
       service: true,
       name: 'arrowleft',
-      displayName: '',
+      displayName: '◀',
     },
     {
       service: true,
       name: 'arrowdown',
-      displayName: '',
+      displayName: '▼',
     },
     {
       service: true,
       name: 'arrowright',
-      displayName: '',
+      displayName: '▶',
     },
     {
       service: true,
