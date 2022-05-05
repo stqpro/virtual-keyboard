@@ -2,6 +2,7 @@ const keys = [
   [
     {
       service: false,
+      id: 'Backquote',
       en: {
         lower: '`',
         upper: '~',
@@ -13,6 +14,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'Digit1',
       en: {
         lower: '1',
         upper: '!',
@@ -24,6 +26,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'Digit2',
       en: {
         lower: '2',
         upper: '@',
@@ -35,6 +38,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'Digit3',
       en: {
         lower: '3',
         upper: '#',
@@ -46,6 +50,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'Digit4',
       en: {
         lower: '4',
         upper: '$',
@@ -57,6 +62,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'Digit5',
       en: {
         lower: '5',
         upper: '%',
@@ -68,6 +74,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'Digit6',
       en: {
         lower: '6',
         upper: '^',
@@ -79,6 +86,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'Digit7',
       en: {
         lower: '7',
         upper: '&',
@@ -90,6 +98,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'Digit8',
       en: {
         lower: '8',
         upper: '*',
@@ -101,6 +110,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'Digit9',
       en: {
         lower: '9',
         upper: '(',
@@ -112,6 +122,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'Digit0',
       en: {
         lower: '0',
         upper: ')',
@@ -123,6 +134,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'Minus',
       en: {
         lower: '-',
         upper: '_',
@@ -134,6 +146,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'Equal',
       en: {
         lower: '=',
         upper: '+',
@@ -145,18 +158,19 @@ const keys = [
     },
     {
       service: true,
-      name: 'backspace',
+      id: 'Backspace',
       displayName: 'Backspace',
     },
   ],
   [
     {
       service: true,
-      name: 'tab',
+      id: 'Tab',
       displayName: 'Tab',
     },
     {
       service: false,
+      id: 'KeyQ',
       en: {
         lower: 'q',
         upper: 'Q',
@@ -168,6 +182,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'KeyW',
       en: {
         lower: 'w',
         upper: 'W',
@@ -179,6 +194,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'KeyE',
       en: {
         lower: 'e',
         upper: 'E',
@@ -190,6 +206,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'KeyR',
       en: {
         lower: 'r',
         upper: 'R',
@@ -201,6 +218,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'KeyT',
       en: {
         lower: 't',
         upper: 'T',
@@ -212,6 +230,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'KeyY',
       en: {
         lower: 'y',
         upper: 'Y',
@@ -223,6 +242,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'KeyU',
       en: {
         lower: 'u',
         upper: 'U',
@@ -234,6 +254,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'KeyI',
       en: {
         lower: 'i',
         upper: 'I',
@@ -245,6 +266,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'KeyO',
       en: {
         lower: 'o',
         upper: 'O',
@@ -256,6 +278,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'KeyP',
       en: {
         lower: 'p',
         upper: 'P',
@@ -267,6 +290,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'BracketLeft',
       en: {
         lower: '[',
         upper: '{',
@@ -278,6 +302,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'BracketRight',
       en: {
         lower: ']',
         upper: '}',
@@ -289,6 +314,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'Backslash',
       en: {
         lower: '\\',
         upper: '|',
@@ -300,18 +326,19 @@ const keys = [
     },
     {
       service: true,
-      name: 'delete',
+      id: 'Delete',
       displayName: 'Del',
     },
   ],
   [
     {
       service: true,
-      name: 'capslock',
+      id: 'CapsLock',
       displayName: 'Caps Lock',
     },
     {
       service: false,
+      id: 'KeyA',
       en: {
         lower: 'a',
         upper: 'A',
@@ -323,6 +350,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'KeyS',
       en: {
         lower: 's',
         upper: 'S',
@@ -334,6 +362,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'KeyD',
       en: {
         lower: 'd',
         upper: 'D',
@@ -345,6 +374,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'KeyF',
       en: {
         lower: 'f',
         upper: 'F',
@@ -356,6 +386,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'KeyG',
       en: {
         lower: 'g',
         upper: 'G',
@@ -367,6 +398,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'KeyH',
       en: {
         lower: 'h',
         upper: 'H',
@@ -378,6 +410,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'KeyJ',
       en: {
         lower: 'j',
         upper: 'J',
@@ -389,6 +422,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'KeyK',
       en: {
         lower: 'k',
         upper: 'K',
@@ -400,6 +434,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'KeyL',
       en: {
         lower: 'l',
         upper: 'L',
@@ -411,6 +446,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'Semicolon',
       en: {
         lower: ';',
         upper: ':',
@@ -422,6 +458,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'Quote',
       en: {
         lower: '\'',
         upper: '"',
@@ -433,18 +470,19 @@ const keys = [
     },
     {
       service: true,
-      name: 'enter',
+      id: 'Enter',
       displayName: 'Enter',
     },
   ],
   [
     {
       service: true,
-      name: 'lshift',
+      id: 'ShiftLeft',
       displayName: 'Shift',
     },
     {
       service: false,
+      id: 'KeyZ',
       en: {
         lower: 'z',
         upper: 'Z',
@@ -456,6 +494,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'KeyX',
       en: {
         lower: 'x',
         upper: 'X',
@@ -467,6 +506,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'KeyC',
       en: {
         lower: 'c',
         upper: 'C',
@@ -478,6 +518,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'KeyV',
       en: {
         lower: 'v',
         upper: 'V',
@@ -489,6 +530,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'KeyB',
       en: {
         lower: 'b',
         upper: 'B',
@@ -500,6 +542,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'KeyN',
       en: {
         lower: 'n',
         upper: 'N',
@@ -511,6 +554,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'KeyM',
       en: {
         lower: 'm',
         upper: 'M',
@@ -522,6 +566,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'Comma',
       en: {
         lower: ',',
         upper: '<',
@@ -533,6 +578,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'Period',
       en: {
         lower: '.',
         upper: '>',
@@ -544,6 +590,7 @@ const keys = [
     },
     {
       service: false,
+      id: 'Slash',
       en: {
         lower: '/',
         upper: '?',
@@ -555,59 +602,59 @@ const keys = [
     },
     {
       service: true,
-      name: 'arrowup',
+      id: 'ArrowUp',
       displayName: '▲',
     },
     {
       service: true,
-      name: 'rshift',
+      id: 'ShiftRight',
       displayName: 'Shift',
     },
   ],
   [
     {
       service: true,
-      name: 'lctrl',
+      id: 'ControlLeft',
       displayName: 'Ctrl',
     },
     {
       service: true,
-      name: 'win',
+      id: 'OSLeft',
       displayName: 'Win',
     },
     {
       service: true,
-      name: 'lalt',
+      id: 'AltLeft',
       displayName: 'Alt',
     },
     {
       service: true,
-      name: 'space',
+      id: 'Space',
       displayName: '',
     },
     {
       service: true,
-      name: 'ralt',
+      id: 'AltRight',
       displayName: 'Alt',
     },
     {
       service: true,
-      name: 'arrowleft',
+      id: 'ArrowLeft',
       displayName: '◀',
     },
     {
       service: true,
-      name: 'arrowdown',
+      id: 'ArrowDown',
       displayName: '▼',
     },
     {
       service: true,
-      name: 'arrowright',
+      id: 'ArrowRight',
       displayName: '▶',
     },
     {
       service: true,
-      name: 'rctrl',
+      id: 'ControlRight',
       displayName: 'Ctrl',
     },
   ],

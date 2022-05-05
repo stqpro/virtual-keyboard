@@ -33,7 +33,7 @@ button {
   }
 
   &:active,
-  .service-pressed {
+  &.pressed {
     background-color: #807e7e;
   }
 }
@@ -46,7 +46,7 @@ button {
   }
 
   &:active,
-  .letter-pressed {
+  &.pressed {
     background-color: #a5a5a5;
   }
 }
@@ -61,37 +61,33 @@ button {
     flex-direction: row;
     gap: $gap;
 
-    .backspace,
-    .enter {
+    #Backspace,
+    #ShiftRight {
       width: calc($base-size * 2.6);
     }
 
-    .tab,
-    .lctrl,
-    .rctrl,
-    .win,
-    .lalt,
-    .ralt {
+    #Tab,
+    #ControlLeft,
+    #ControlRight,
+    #OSLeft,
+    #AltLeft,
+    #AltRight {
       width: calc($base-size * 1.5);
     }
 
-    .capslock {
+    #CapsLock {
       width: calc($base-size * 2);
     }
 
-    .enter {
+    #Enter {
       width: calc($base-size * 2.7);
     }
 
-    .lshift {
+    #ShiftLeft {
       width: calc($base-size * 2.1);
     }
 
-    .rshift {
-      width: calc($base-size * 2.6);
-    }
-
-    .space {
+    #Space {
       width: calc($base-size * 5.6);
     }
   }

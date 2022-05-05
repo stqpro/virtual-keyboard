@@ -27,8 +27,7 @@ button:hover {
 .service:hover {
   background-color: #9a9da6;
 }
-.service:active,
-.service .service-pressed {
+.service:active, .service.pressed {
   background-color: #807e7e;
 }
 
@@ -38,8 +37,7 @@ button:hover {
 .letter:hover {
   background-color: #dadce0;
 }
-.letter:active,
-.letter .letter-pressed {
+.letter:active, .letter.pressed {
   background-color: #a5a5a5;
 }
 
@@ -53,31 +51,28 @@ button:hover {
   flex-direction: row;
   gap: 5px;
 }
-.keyboard-container .row .backspace,
-.keyboard-container .row .enter {
+.keyboard-container .row #Backspace,
+.keyboard-container .row #ShiftRight {
   width: 130px;
 }
-.keyboard-container .row .tab,
-.keyboard-container .row .lctrl,
-.keyboard-container .row .rctrl,
-.keyboard-container .row .win,
-.keyboard-container .row .lalt,
-.keyboard-container .row .ralt {
+.keyboard-container .row #Tab,
+.keyboard-container .row #ControlLeft,
+.keyboard-container .row #ControlRight,
+.keyboard-container .row #OSLeft,
+.keyboard-container .row #AltLeft,
+.keyboard-container .row #AltRight {
   width: 75px;
 }
-.keyboard-container .row .capslock {
+.keyboard-container .row #CapsLock {
   width: 100px;
 }
-.keyboard-container .row .enter {
+.keyboard-container .row #Enter {
   width: 135px;
 }
-.keyboard-container .row .lshift {
+.keyboard-container .row #ShiftLeft {
   width: 105px;
 }
-.keyboard-container .row .rshift {
-  width: 130px;
-}
-.keyboard-container .row .space {
+.keyboard-container .row #Space {
   width: 280px;
 }
 
