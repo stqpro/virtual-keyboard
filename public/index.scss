@@ -8,6 +8,7 @@ $base-size: 10 * $gap;
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f8f8f8;
+  height: 100%;
 }
 
 button {
@@ -95,7 +96,7 @@ button {
 
 .textarea {
   width: 845px;
-  height: 270px;
+  height: 130px;
   resize: none;
   padding: 1em;
   font-size: 17px;
@@ -121,4 +122,11 @@ button {
 h1 {
   text-align: center;
   margin: 1em;
+}
+
+.hint {
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+  color: #474747;
 }

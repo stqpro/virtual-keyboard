@@ -620,7 +620,7 @@ const keys = [
     {
       service: true,
       id: 'OSLeft',
-      displayName: 'Win',
+      displayName: 'Meta',
     },
     {
       service: true,

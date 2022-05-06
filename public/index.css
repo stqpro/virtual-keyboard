@@ -5,6 +5,7 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #f8f8f8;
+  height: 100%;
 }
 
 button {
@@ -78,7 +79,7 @@ button:hover {
 
 .textarea {
   width: 845px;
-  height: 270px;
+  height: 130px;
   resize: none;
   padding: 1em;
   font-size: 17px;
@@ -103,4 +104,11 @@ button:hover {
 h1 {
   text-align: center;
   margin: 1em;
+}
+
+.hint {
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+  color: #474747;
 }/*# sourceMappingURL=index.css.map */
